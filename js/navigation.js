@@ -9,6 +9,7 @@ class Navigation {
     document.querySelectorAll('.nav-item').forEach(link => {
       link.addEventListener('click', (e) => this.handleClick(e));
     });
+    this.updateIndicator();
   }
 
   handleClick(e) {
@@ -21,7 +22,7 @@ class Navigation {
     });
     
     // Показываем нужную секцию
-    this.updateIndicator(false);
+    this.updateIndicator();
     
     // Обновляем URL без перезагрузки
     const target = this.currentTarget.getAttribute('data-target');
