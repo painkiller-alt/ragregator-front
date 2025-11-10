@@ -15,7 +15,8 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="logo">
+        <button class="nav-item logo" data-target="welcome">
+            <span class="logo-indicator"></span>
             <span class="logo-text logo-text-top">
                 <span class="logo-text-top-1">р</span>
                 <span class="logo-text-top-2">а</span>
@@ -34,14 +35,38 @@
                 <span class="logo-text-bottom-3">г</span>
                 <span class="logo-text-bottom-4">.</span>
             </span>
-        </div>
+        </button>
 
         <div class="navigation">
-            <a href="" class="nav-item-1">Продукты</a>
-            <a href="" class="nav-item-2">Клиентские приложения</a>
-            <a href="" class="nav-item-3">Новости</a>
-            <a href="" class="nav-item-4">Поддержка</a>
+            <button class="nav-item nav-item-1" data-target="products">Продукты</button>
+            <button class="nav-item nav-item-2" data-target="client-applications">Клиентские приложения</button>
+            <button class="nav-item nav-item-3" data-target="news">Новости</button>
+            <button class="nav-item nav-item-4" data-target="support">Поддержка</button>
         </div>
     </div>
+
+    <div class="content">
+        <div class="page-section" id="welcome">
+            стартовый экран
+        </div>
+
+        <div class="page-section" id="products">
+            продукты
+        </div>
+
+        <div class="page-section" id="client-applications">
+            клиентские приложения
+        </div>
+
+        <div class="page-section" id="news">
+            новости
+        </div>
+
+        <div class="page-section" id="support">
+            поддержка
+        </div>
+    </div>
+
+    <script src="js/navigation.js"></script>
 </body>
 </html>
