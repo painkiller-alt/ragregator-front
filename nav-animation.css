@@ -1,0 +1,15 @@
+.navigation .nav-item-1 {opacity: 0; transition: opacity 0.2s ease;}
+.navigation .nav-item-2 {opacity: 0; transition: opacity 0.2s ease;}
+.navigation .nav-item-3 {opacity: 0; transition: opacity 0.2s ease;}
+.navigation .nav-item-4 {opacity: 0; transition: opacity 0.2s ease;}
+
+.navigation .nav-item-4 { animation: showNavItem 0.2s ease 0.1s forwards; }
+.navigation .nav-item-3 { animation: showNavItem 0.2s ease 0.2s forwards; }
+.navigation .nav-item-2 { animation: showNavItem 0.2s ease 0.3s forwards; }
+.navigation .nav-item-1 { animation: showNavItem 0.2s ease 0.4s forwards; }
+
+@keyframes showNavItem {
+  to {
+    opacity: 1;
+  }
+}

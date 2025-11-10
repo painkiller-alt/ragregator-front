@@ -1,0 +1,77 @@
+.logo {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.logo-text {
+    font-weight: 600;
+    line-height: 22px;
+    font-size: 24px;
+    font-family: "Prosto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+}
+
+.logo-text-top .logo-text-top-1  {visibility: collapse;}
+.logo-text-top .logo-text-top-2  {visibility: collapse;}
+.logo-text-top .logo-text-top-3  {visibility: collapse;}
+.logo-text-top .logo-text-top-4  {visibility: collapse;}
+.logo-text-top .logo-text-top-5  {visibility: collapse;}
+.logo-text-top .logo-text-top-6  {visibility: collapse;}
+.logo-text-top .logo-text-top-7  {visibility: collapse;}
+.logo-text-top .logo-text-top-8  {visibility: collapse;}
+.logo-text-top .logo-text-top-9  {visibility: collapse;}
+.logo-text-top .logo-text-top-10 {visibility: collapse;}
+
+.logo-text-bottom .logo-text-bottom-1 {visibility: collapse;}
+.logo-text-bottom .logo-text-bottom-2 {visibility: collapse;}
+.logo-text-bottom .logo-text-bottom-3 {visibility: collapse;}
+.logo-text-bottom .logo-text-bottom-4 {visibility: collapse;}
+
+.logo-text-top::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: #000;
+  margin-left: 5px;
+  animation: hideLetter 0s ease 1.80s forwards;
+}
+.logo-text-bottom::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: #000;
+  margin-left: 5px;
+  visibility:collapse;
+  animation: showLetter 0s ease 1.8s forwards, hideLetter 0s ease 2.3s forwards;
+}
+
+.logo-text-top .logo-text-top-1  { animation: showLetter 0s ease 0.3s forwards; }
+.logo-text-top .logo-text-top-2  { animation: showLetter 0s ease 0.35s forwards; }
+.logo-text-top .logo-text-top-3  { animation: showLetter 0s ease 0.40s forwards; }
+.logo-text-top .logo-text-top-4  { animation: showLetter 0s ease 0.45s forwards, hideLetter 0s ease 1.70s forwards; }
+.logo-text-top .logo-text-top-5  { animation: showLetter 0s ease 0.50s forwards, hideLetter 0s ease 1.65s forwards; }
+.logo-text-top .logo-text-top-6  { animation: showLetter 0s ease 0.65s forwards, hideLetter 0s ease 1.60s forwards; }
+.logo-text-top .logo-text-top-7  { animation: showLetter 0s ease 0.75s forwards, hideLetter 0s ease 1.55s forwards; }
+.logo-text-top .logo-text-top-8  { animation: showLetter 0s ease 0.80s forwards, hideLetter 0s ease 1.50s forwards; }
+.logo-text-top .logo-text-top-9  { animation: showLetter 0s ease 0.85s forwards, hideLetter 0s ease 1.45s forwards; }
+.logo-text-top .logo-text-top-10 { animation: showLetter 0s ease 0.90s forwards, hideLetter 0s ease 1.4s forwards; }
+
+.logo-text-bottom .logo-text-bottom-1  { animation: showLetter 0s ease 1.90s forwards; }
+.logo-text-bottom .logo-text-bottom-2  { animation: showLetter 0s ease 1.95s forwards; }
+.logo-text-bottom .logo-text-bottom-3  { animation: showLetter 0s ease 2s forwards; }
+.logo-text-bottom .logo-text-bottom-4  { animation: showLetter 0.1s ease 2s forwards; }
+
+@keyframes hideLetter {
+  to {
+    visibility:collapse;
+  }
+}
+@keyframes showLetter {
+  to {
+    visibility: visible;
+  }
+}
